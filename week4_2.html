@@ -445,40 +445,8 @@ head(TidyData)</code></pre>
 ## 5    30         Reef Windy/ sunny    60     Low 360-05-11
 ## 6    30         Reef Windy/ sunny    60     Low 358-04-17</code></pre>
 <pre class="r"><code>fishcount &lt;- summarise(group_by(TidyData, Date, Site, ComName),
-                                Count = sum(Freq))
-
-
-head(fishcount)</code></pre>
-<pre><code>## # A tibble: 6 x 4
-## # Groups:   Date, Site [1]
-##   Date    Site ComName           Count
-##   &lt;fct&gt;  &lt;int&gt; &lt;fct&gt;             &lt;int&gt;
-## 1 7/4/13    25 Blue chromis         10
-## 2 7/4/13    25 Blue tang             2
-## 3 7/4/13    25 Bluehead wrasse       7
-## 4 7/4/13    25 Bluestriped grunt     5
-## 5 7/4/13    25 Cocoa damselfish      2
-## 6 7/4/13    25 Dusky damselfish      7</code></pre>
-<pre class="r"><code>head(TidyData)</code></pre>
-<pre><code>##   Transect              ComName Freq TL   Date Site Dive Observer  Time Depthft
-## 1        1         Blue chromis    3  3 7/4/13   25    1     Kate 10:45       6
-## 2        1 Stoplight parrotfish    1  2 7/4/13   25    1     Kate 10:45       6
-## 3        1 Stoplight parrotfish    1  6 7/4/13   25    1     Kate 10:45       6
-## 4        1 Stoplight parrotfish    1  3 7/4/13   25    1     Kate 10:45       6
-## 5        1 Stoplight parrotfish    1  7 7/4/13   25    1     Kate 10:45       6
-## 6        1    Yellowhead wrasse    1  4 7/4/13   25    1     Kate 10:45       6
-##   TempC Transecttype      Weather Visft Current    SpCode
-## 1    30         Reef Windy/ sunny    60     Low 346-05-12
-## 2    30         Reef Windy/ sunny    60     Low 360-05-11
-## 3    30         Reef Windy/ sunny    60     Low 360-05-11
-## 4    30         Reef Windy/ sunny    60     Low 360-05-11
-## 5    30         Reef Windy/ sunny    60     Low 360-05-11
-## 6    30         Reef Windy/ sunny    60     Low 358-04-17</code></pre>
-<pre class="r"><code>sum(TidyData$Freq)</code></pre>
-<pre><code>## [1] 1666</code></pre>
-</div>
-<div id="dont-forget-parenthesis-order" class="section level1">
-<h1>Don’t forget parenthesis order!</h1>
+                                Count = sum(Freq))</code></pre>
+<p>Don’t forget parenthesis order!</p>
 </div>
 
 

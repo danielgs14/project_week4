@@ -40,10 +40,6 @@ head(TidyData)
 fishcount <- summarise(group_by(TidyData, Date, Site, ComName),
                                 Count = sum(Freq))
 
-
-head(fishcount)
-head(TidyData)
-
-sum(TidyData$Freq)
 ```
-# Don't forget parenthesis order!
+
+Don't forget parenthesis order!

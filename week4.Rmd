@@ -10,6 +10,7 @@ output:
     theme: united
     toc: yes
 ---
+
 # Week 4: Tidying our data
 ```{r}
 library(knitr)
